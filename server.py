@@ -1,7 +1,7 @@
-import mysql.connector as py
+import psycopg2
 PATH = "./studentDetails.txt"
 # Connect to the MySQL database
-cnx = py.connect(
+cnx = psycopg2.connect(
     host="localhost",
     database="postgres",
     user="root",
